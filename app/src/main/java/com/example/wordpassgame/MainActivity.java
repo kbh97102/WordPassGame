@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         words = new ArrayList<>();
 
+
         RecyclerAdapter recyclerAdapter = new RecyclerAdapter(words);
         binding.reyclerviewMessageList.setAdapter(recyclerAdapter);
         binding.reyclerviewMessageList.setLayoutManager(new LinearLayoutManager(this));
