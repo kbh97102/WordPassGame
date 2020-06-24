@@ -9,10 +9,18 @@ import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
 
+    private static final int COMPUTER_MESSAGE = 1;
+    private static final int USER_MESSAGE = 2;
+
     private ArrayList<WordInfo> words;
 
     public RecyclerAdapter(ArrayList<WordInfo> words){
         this.words = words;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return super.getItemViewType(position);
     }
 
     @NonNull
