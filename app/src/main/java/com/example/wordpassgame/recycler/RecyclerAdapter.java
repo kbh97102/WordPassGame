@@ -5,10 +5,14 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
 
-    public RecyclerAdapter(){
+    private ArrayList<WordInfo> words;
 
+    public RecyclerAdapter(ArrayList<WordInfo> words){
+        this.words = words;
     }
 
     @NonNull
