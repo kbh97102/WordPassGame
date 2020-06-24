@@ -10,4 +10,5 @@ public class RecyclerHolder extends RecyclerView.ViewHolder {
     public RecyclerHolder(@NonNull View itemView) {
         super(itemView);
     }
+
 }
